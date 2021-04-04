@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="SurgeryApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SurgeryApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <Grid FocusVisualPrimaryBrush="{x:Null}">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Yellow"/>
+                <GradientStop Color="#FF081275" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ComboBox x:Name="cmbPatients" Margin="553,403,0,0" Width="296" FontWeight="Normal" FontSize="20"/>
+        <TextBox x:Name="txbSymptoms" HorizontalAlignment="Left" Margin="553,562,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.219,-0.633" Width="296" FontWeight="Normal" FontSize="20"/>
+        <Button x:Name="btnSubmit" Content="Submit" Margin="553,732,0,0" VerticalAlignment="Top" Height="51" Width="295" Click="btnSubmit_Click" FontWeight="Bold" FontSize="22">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF3FED23" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <CheckBox x:Name="chkCovid19" Content="As a Covid-19 test been done ?" Margin="553,644,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="309,410,0,0" Text="Choose Patient : " TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="309,485,0,0" Text="Date :" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="309,564,0,0" Text="Symptoms :" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="309,644,0,0" Text="Covid19 Test ?" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <DatePicker x:Name="dtpDate" Margin="553,472,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="20"/>
+        <TextBlock x:Name="txbHeader" HorizontalAlignment="Left" Margin="422,163,0,0" Text="Surgery App" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="48"/>
+
+    </Grid>
+</Page>
